@@ -1,0 +1,77 @@
+.download-card {
+  min-height: 150px;
+
+  img {
+    min-height: 150px;
+    max-height: 150px;
+  }
+
+  .card-img-top {
+    object-fit: cover;
+  }
+}
+
+.row-bordered {
+  position: relative;
+}
+
+.row-bordered:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  bottom: 25px;
+  left: 15px;
+  right: 15px;
+}
+
+.table {
+  .table-nowrap {
+    width: 1px;
+    white-space: nowrap;
+  }
+}
+
+.health-color {
+  color: #ff1a26;
+}
+
+.mana-color {
+  color: #292dff;
+}
+
+.bg-trader {
+  background-color: #79983b;
+}
+
+.bg-hunter {
+  background-color: #2a455a;
+}
+
+.bg-thief {
+  background-color: #642daf;
+}
+
+.bg-none {
+  background-color: #a8a8a8;
+}
+
+// Supporter online switch
+#headingTwo {
+  cursor: pointer;
+  user-select: none;
+
+  > p {
+    &:after {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f205';
+      color: #66BB6A;
+      float: right;
+    }
+
+    &.collapsed:after {
+      content: '\f204';
+      color: #858796;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+#footer {
+  background-color: #ffffff;
+  color: white;
+  padding-top: 30px;
+
+
+  .footer-copyright {
+    background-color: #ffffff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+  }
+
+  .row {
+    margin-bottom: 10px;
+  }
+
+  .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
+  }
+
+  .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+    span {
+      color: #ccc;
+    }
+  }
+
+  h5 {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+
+  h2 a {
+    font-size: 50px;
+    text-align: center;
+    //color: #fff;
+  }
+
+  a {
+    //color: #d2d1d1;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    //color: white;
+  }
+
+  .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+
+  .social-networks a {
+    font-size: 32px;
+    color: #ccc;
+    padding: 10px;
+    transition: 0.2s;
+  }
+
+  .social-networks a:hover {
+    text-decoration: none;
+  }
+
+  .facebook:hover {
+    color: #0077e2;
+  }
+
+  .youtube:hover {
+    color: #ef1a1a;
+  }
+
+  .discord:hover {
+    color: #7289da;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #footer {
+    text-align: center;
+  }
+}
