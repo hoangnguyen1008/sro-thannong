@@ -81,7 +81,7 @@ body {
 
 .header-container {
     background: url('../images/header_bg.jpg') top center;
-    background-size: contain;
+    height: 650px;
     left: 0;
     top: 0;
     z-index: 998;
