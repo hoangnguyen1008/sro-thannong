@@ -1,3 +1,12 @@
+@include('theme::layouts.download')
+
+@guest
+    @include('theme::layouts.login')
+    @include('theme::layouts.register')
+@else
+    @include('theme::layouts.account')
+@endguest
+
 <div class="card">
     <div class="card-header">
         <h5>{{ __('sidebar.information.title') }}</h5>
@@ -98,7 +107,9 @@
     </div>
 </div>
 
-@include('theme::layouts.supportersonline')
+<!-- @include('theme::layouts.supportersonline') -->
+
+@include('theme::layouts.pvprecords')
 
 @include('theme::layouts.latestkills')
 
@@ -106,13 +117,11 @@
 
 @include('theme::layouts.toptenplayers')
 
-@include('theme::layouts.pvprecords')
+<!-- @include('theme::layouts.fortress') -->
 
-@include('theme::layouts.fortress')
+<!-- @include('theme::layouts.jobranking') -->
 
-@include('theme::layouts.jobranking')
-
-@include('theme::layouts.timers')
+<!-- @include('theme::layouts.timers') -->
 
 <!-- @include('theme::layouts.discord') -->
 
