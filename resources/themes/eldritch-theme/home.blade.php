@@ -60,10 +60,10 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="box box-small-icon-alt">
-                        <a href="{{ route('home-referral') }}" class="dashboard-link d-none d-sm-block">
+                        <a href="{{ route('home') }}" class="dashboard-link d-none d-sm-block">
                             <i class="fa fa-3x fa-retweet text-dark box-icon box-icon-outline"></i>
                         </a>
-                        <a href="{{ route('home-referral') }}" class="dashboard-link">
+                        <a href="{{ route('home') }}" class="dashboard-link">
                             <h4 class="box-title">
                                 {{ __('home.grid.ref') }}
                             </h4>
@@ -73,68 +73,6 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="box box-small-icon-alt">
-                        <a href="{{ route('home-tickets') }}" class="dashboard-link d-none d-sm-block">
-                            <i class="fa fa-3x fa-ticket-alt text-dark box-icon box-icon-outline"></i>
-                        </a>
-                        <a href="{{ route('home-tickets') }}" class="dashboard-link">
-                            <h4 class="box-title">
-                                {{ __('home.grid.tickets') }}
-                            </h4>
-                        </a>
-                        <p class="box-description">
-                            {{ __('home.grid.tickets-desc') }}
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="box box-small-icon-alt">
-                        <a href="{{ route('home-voucher') }}" class="dashboard-link d-none d-sm-block">
-                            <i class="fa fa-3x fa-gift text-dark box-icon box-icon-outline"></i>
-                        </a>
-                        <a href="{{ route('home-voucher') }}" class="dashboard-link">
-                            <h4 class="box-title">
-                                {{ __('home.grid.voucher') }}
-                            </h4>
-                        </a>
-                        <p class="box-description">
-                            {{ __('home.grid.voucher-desc', ['silk' => config('siteSettings.sro_silk_name', 'Silk')]) }}
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="box box-small-icon-alt">
-                        <a href="{{ route('web-inventory-index') }}" class="dashboard-link d-none d-sm-block">
-                            <i class="fa fa-3x fa-box-open text-dark box-icon box-icon-outline"></i>
-                        </a>
-                        <a href="{{ route('web-inventory-index') }}" class="dashboard-link">
-                            <h4 class="box-title">
-                                {{ __('home.grid.web-inventory') }}
-                            </h4>
-                        </a>
-                        <p class="box-description">
-                            {{ __('home.grid.web-inventory-help') }}
-                        </p>
-                    </div>
-                </div>
-                @if(config('siteSettings.voteforsilk'))
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <div class="box box-small-icon-alt">
-                            <a href="{{ route('vote-for-silk-index') }}" class="dashboard-link d-none d-sm-block">
-                                <i class="fa fa-3x fa-vote-yea text-dark box-icon box-icon-outline"></i>
-                            </a>
-                            <a href="{{ route('vote-for-silk-index') }}" class="dashboard-link">
-                                <h4 class="box-title">
-                                    {{ __('home.grid.voteforsilk') }}
-                                </h4>
-                            </a>
-                            <p class="box-description">
-                                {{ __('home.grid.voteforsilk-help') }}
-                            </p>
-                        </div>
-                    </div>
-                @endif
             </div>
         </div>
     </div>

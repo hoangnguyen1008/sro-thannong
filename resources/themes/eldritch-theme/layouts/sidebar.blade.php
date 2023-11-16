@@ -114,5 +114,5 @@
 
 @include('theme::layouts.timers')
 
-@include('theme::layouts.discord')
+<!-- @include('theme::layouts.discord') -->
 

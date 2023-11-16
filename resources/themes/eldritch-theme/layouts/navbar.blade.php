@@ -31,14 +31,6 @@
                             {{ __('navbar.nav.ranking') }}
                         </a>
                     </li>
-                    @auth
-                        <li class="nav-item">
-                            <a class="nav-link{{(isset($alias) && $alias === 'AuctionHouse') ? ' active' : ''}}"
-                               href="{{ route('auctions-house') }}">
-                                {{ __('navbar.nav.auction-house') }}
-                            </a>
-                        </li>
-                    @endauth
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown"
                            class="nav-link dropdown-toggle{{(isset($alias) && $alias === 'pages') ? ' active' : ''}}"
@@ -122,17 +114,6 @@
                                 </a>
                                 @endrole
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('notification') }}"
-                               class="nav-link notifications{{(isset($alias) && $alias == 'Notifications') ? ' active' : ''}}">
-                                <i class="fas fa-bell"></i>
-                                @if($NotificationsCountProvider > 0)
-                                    <span class="badge badge-danger align-top">
-                                {{ $NotificationsCountProvider }}
-                            </span>
-                                @endif
-                            </a>
                         </li>
                     @endguest
                 </ul>
