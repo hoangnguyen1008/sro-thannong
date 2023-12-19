@@ -75,17 +75,18 @@ class DonationsController extends Controller
 
         // More then the _token
         if ($request->all() > 1) {
-            // Setting all to 0
-            DonationMethods::query()->update(['active' => false]);
+            // TODO: Insert data
+            // // Setting all to 0
+            // DonationMethods::query()->update(['active' => false]);
 
-            // Looping the request
-            foreach ($request->all() as $key => $data) {
-                if ($key === '_token') {
-                    continue;
-                }
-                DonationMethods::where('id', '=', $key)
-                    ->update(['active' => $data ? true : false]);
-            }
+            // // Looping the request
+            // foreach ($request->all() as $key => $data) {
+            //     if ($key === '_token') {
+            //         continue;
+            //     }
+            //     DonationMethods::where('id', '=', $key)
+            //         ->update(['active' => $data ? true : false]);
+            // }
         }
 
         return back()->with('success', trans('backend/notification.form-submit.success'));

@@ -6,7 +6,7 @@ return [
         'title' => 'Enable / Disable your Donations methods',
         'activate' => 'Activate',
         'slug' => 'Unique url + blade template name:',
-        'submit' => 'Save your methods',
+        'submit' => 'Submit Donation',
     ],
     'logging' => [
         'title' => 'Donations Logging',
