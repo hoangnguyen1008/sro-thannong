@@ -28,7 +28,7 @@ class IndexController extends Controller
     public function index()
     {
         $news = News::where('published_at', '<=', Carbon::Now())
-            ->orderBy('published_at', 'ASC')->with('image')->take(4)->get();
+            ->orderBy('published_at', 'ASC')->with('image')->take(20)->get();
         return view('theme::index', [
             'news' => $news
         ]);
