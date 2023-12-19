@@ -21,7 +21,7 @@
         <div class="card">
             @forelse($news as $key => $newsData)
             @if($key != 0)
-            <a class="text-decoration-none h4" href="{{ route('news-slug', ['slug' => $newsData->slug]) }}">
+            <a style="color:orange;" href="{{ route('news-slug', ['slug' => $newsData->slug]) }}">
                 {{ $newsData->title }}
             </a>
             @endif
@@ -32,7 +32,7 @@
 
     <div class="card-body">
         <div class="card">
-            <a class="text-decoration-none h4" href="{{ route('news-slug', ['slug' => $newsData->slug]) }}">
+            <a class="text-decoration-none h1" href="{{ route('news-slug', ['slug' => $newsData->slug]) }}">
                 {{ $news[0]->title }}
             </a>
             {!! $news[0]->body !!}
